@@ -1,0 +1,19 @@
+.panel {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+}
+
+.panel__header {
+  padding: 4px;
+  background-color: #e2e0e0;
+}
+
+.panel__content {
+  padding: 4px;
+}
+
+
