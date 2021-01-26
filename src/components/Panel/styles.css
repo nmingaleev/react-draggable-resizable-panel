@@ -5,6 +5,12 @@
   width: 200px;
   height: 200px;
   border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.panel__container {
+  height: 100%;
+  position: relative;
 }
 
 .panel__header {
@@ -15,5 +21,3 @@
 .panel__content {
   padding: 4px;
 }
-
-
