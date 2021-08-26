@@ -16,7 +16,9 @@ const PanelHeader = ({ onDrag }) => {
   }, []);
 
   useEffect(() => {
-    const handleMouseMove = (e) => onDrag(e.movementX, e.movementY);
+    const ratio = window.devicePixelRatio
+
+    const handleMouseMove = (e) => onDrag(e.movementX / ratio, e.movementY / ratio);
 
     if (mouseDown) {
       window.addEventListener('mousemove', handleMouseMove);
