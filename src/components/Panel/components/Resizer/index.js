@@ -11,7 +11,9 @@ const Resizer = ({ onResize }) => {
     const handleMouseMove = (e) => {
       if (!direction) return;
 
-      onResize(direction, e.movementX, e.movementY);
+      const ratio = window.devicePixelRatio
+
+      onResize(direction, e.movementX / ratio, e.movementY / ratio);
     };
 
     if (mouseDown) {
