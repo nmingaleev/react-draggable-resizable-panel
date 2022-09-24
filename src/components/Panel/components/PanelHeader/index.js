@@ -11,7 +11,7 @@ const PanelHeader = ({ onDrag }) => {
     window.addEventListener('mouseup', handleMouseUp);
 
     return () => {
-      window.addEventListener('mouseup', handleMouseUp);
+      window.removeEventListener('mouseup', handleMouseUp);
     };
   }, []);
 
